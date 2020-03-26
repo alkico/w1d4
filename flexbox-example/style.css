@@ -19,9 +19,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-duration: 1s;
     background-position: center;
     background-size: cover;
+    transition-property: flex;
+    transition-duration: 1s;
 }
 
 
@@ -48,4 +49,13 @@ body {
 .box:hover {
     /* background-color: blue; */
     flex: 4;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+    .box {
+        width: 80vw;
+    }
 }
